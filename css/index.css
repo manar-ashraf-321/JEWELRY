@@ -45,7 +45,7 @@ box-shadow: none;
 /* -------------------------- */
 .landing{
     background-color: var(--main-color);
-    min-height: calc(85vh);
+    min-height: calc(75vh);
     display: flex;
     justify-content: center;
     align-items: center;
