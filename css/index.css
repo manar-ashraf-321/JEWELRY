@@ -1,0 +1,273 @@
+:root{
+    --main-color:#422d21;
+    --yelow-color:#fc6711;
+    --blur-color:rgb(252, 103, 17,0.25);
+}
+body{
+    /* height: 10000px; */
+    background-color: rgb(222, 222, 222);
+    /* background-color: #eeeded; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar-brand{
+    color:var(--yelow-color);
+font-family:'Ga Maamli';
+font-size: 30px;
+}
+/* .navbar-brand:hover{
+    
+} */
+.navbar .navbar-nav .nav-link{
+    color:var(--yelow-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:black;
+}
+
+.navbar .navbar-toggler{
+box-shadow: none;
+}
+.navbar .Login{
+    background-color: #fc6711;
+    border-radius: 5px;
+}
+.navbar .Login .btn:hover{
+    background-color:var(--main-color);
+    box-shadow: none;
+    color: var(--yelow-color);
+    border-color: var(--yelow-color);
+}
+/* -------------------------- */
+.landing{
+    background-color: var(--main-color);
+    min-height: calc(85vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--yelow-color);
+}
+.landing h1{
+    font-family: 'Edu Australia VIC WA NT Hand Precursive'
+}
+.landing .btn{
+    
+    background-color: #fc6711;
+    border-radius: 5px;
+    border-color: #fc6711;
+}
+.landing .btn:hover{
+    background-color:var(--main-color);
+    box-shadow: none;
+    color: var(--yelow-color);
+    border-color: var(--yelow-color);
+}
+/* --------------------------------------------------------------------------------------- */
+.feature img{
+    width: 300px;
+    height: 250px;
+}
+.main-titl h2{
+    font-size:5rem ;
+    color:var(--blur-color);
+    margin-top: -85px;
+}
+.feature .icon-holder svg{
+left: 50%;
+transform: translateX(-50%);
+}
+.feat .icon-holder .icon{
+    color:#fc6711;
+}
+.feature .feat h4{
+color: var(--yelow-color);
+}
+.feature .feat p{
+color: var(--yelow-color);
+}
+.feature img{
+    width: 300px;
+    height: 250px;
+}
+.feature img:hover{
+    transition: 500ms;
+    transform: rotate(6.28rad) scale(1.3);
+}
+/* --------------------------------------------------------------------------------------- */
+.our-work{
+margin:90px 0px ;
+}
+.our-work .card{
+    background-color: var(--main-color);
+width: 300px;
+padding: 60px 0px;
+overflow: hidden;
+border-radius: 10px;
+margin-bottom: 10px;
+color: var(--yelow-color);
+}
+.our-work .card:hover{
+margin: -10px;
+}
+.our-work .card img{
+    margin-top: -50px;
+width: 300px;
+height: 200px;
+}
+.our-work .btn{
+    color: var(--main-color);
+    margin-top: 5px;
+    padding: 2px 80px;
+    background-color: var(--yelow-color);
+    border-radius: 5px;
+    border: 1px solid var(--yelow-color);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    margin-bottom:-60px;
+    margin-left: 10px;
+}
+.our-work .btn:hover{
+    background-color: var(--main-color);
+    color: var(--yelow-color);
+}
+.View{
+    margin-bottom: 90px !important;
+}
+.View .btn:hover{
+    background-color:rgb(222, 222, 222);
+}
+/* --------------------------------------------------------------- */
+.about-us{
+    margin-bottom: 150px;
+}
+.about-us h2{
+    color: var(--blur-color);
+    font-size: 5rem;
+}
+.about-us p{
+    font-family: 'arial';
+    color: var(--yelow-color);
+}
+.about-us .btn{
+    margin-top: -40px;
+    padding: 10px 80px;
+    background-color: var(--yelow-color);
+    border-radius: 5px;
+    border: 1px solid var(--yelow-color);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    margin-bottom:90px;
+}
+.about-us .btn:hover{
+    background-color: rgb(225, 225, 225);
+    color: var(--yelow-color);
+}
+.about-us img{
+    width: 700px;
+    border-radius: 10px;
+}
+.about-us img:hover{
+    transform: rotate(5deg);
+}
+/* --------------------------------------------------------------------------- */
+.offer{
+    margin-top: 100px;
+    margin-bottom: 700px;
+}
+.offer .box1 h2{
+    margin-top: -550px;
+    color: #fc6711;
+}
+.offer .box1 .btn{
+color: var(--main-color);
+background-color: var(--yelow-color);
+margin-right: 750px;
+margin-top: -20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.offer .box1 .btn:hover{
+    color: var(--yelow-color);
+    background-color: transparent;
+    border-color:var(--yelow-color);
+}
+.box2 img{
+    height: 557px;
+    width: 650px;
+}
+.offer .box2 h2{
+    margin-top: -500px;
+    color: #fc6711;
+}
+.offer .box2 .btn{
+    color: var(--main-color);
+    background-color: var(--yelow-color);
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .offer .box2 .btn:hover{
+        color: var(--yelow-color);
+        background-color: transparent;
+        border-color:var(--yelow-color);
+}
+/* ------------------------------------------------------------------------------------ */
+.testimonial{
+    margin-bottom: 150px;
+}
+.testimonial img{
+    width: 100px;
+    padding-top: 5px;
+    border-color:var(--yelow-color) ;
+}
+.testimonial .test{
+color: var(--yelow-color);
+border-radius: 20px;
+background-color: #422d21;
+padding: 10px;
+}
+.left,
+.right{
+    background-color: var(--yelow-color);
+    color: var(--main-color);
+    border-radius: 3px;
+}
+.left:hover,
+.right:hover{
+margin: 2px;
+background-color: transparent;
+}
+/* --------------------------------------------------------------------------------------- */
+.footer{
+    background-color: var(--main-color);
+    color: var(--yelow-color);
+}
+.footer h2{
+    font-family:'Ga Maamli';
+}
+.footer a{
+color: var(--yelow-color);
+}
+.footer a:hover{
+    color: var(--blur-color);
+}
+.contact .btn{
+    background-color: var(--yelow-color);
+    color: #422d21;
+    border-color: var(--yelow-color);
+}
+.contact .btn:hover{
+background-color:var(--main-color);
+color: var(--yelow-color);
+}
+/* ------------------------------------------------------------------------------------- */
+.copyright{
+    color:var(--main-color);
+}
+.copyright span{
+    color: var(--yelow-color);
+}
