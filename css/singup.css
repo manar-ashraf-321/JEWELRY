@@ -32,7 +32,7 @@ font-family:'Ga Maamli';
 .txt{
     padding:10px; 
     margin: 5px;
-    border-radius: 5px;
+    border: 5px;
     background-color:rgb(180, 175, 175,0.2);
     border: 0.5px;
 }
@@ -49,7 +49,7 @@ height: 50px;
     border-radius: 5px;
     background-color: rgb(97, 105, 105);
     border:0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 .send:hover{
@@ -60,3 +60,39 @@ height: 50px;
 /* .color{
     background-color:rgb(255, 255, 0,0.1);
 } */
+/*--------------------------------------------*/
+.label{
+    color: var(--yelow-color);
+}
+.form-check-input{
+background-color: var(--main-color);
+}
+.form-check-input:checked{
+background-color: var(--yelow-color);
+}
+.invalidE{
+    color: red;
+    padding-left: 20px;
+}
+.invalidP{
+    color: red;
+    padding-left: 20px;
+}
+.invalidC{
+    color: red;
+    padding-left: 20px;
+}
+.icon{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 26px;
+}
+.ico{
+    margin-left: 25px;
+    color: var(--yelow-color);
+}
+.ico:hover{
+    color: var(--yelow-color);
+    box-shadow: 0px 10px 10px rgb(0, 0, 0,0.1);
+}

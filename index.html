@@ -9,266 +9,575 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="normlize-css.txt">
+    <!-- <link rel="stylesheet" href="normlize-css.txt"> -->
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style src="js/index.js"></style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top ">
-        <div class="container">
-            <h1 class="navbar-brand">Jewelry</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" 
-            aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link p-lg-3 " href="#">Service</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link p-lg-3 " href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-lg-3" href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="Login">
-                <a class="btn main-btn" href="login.html">Signup</a>
+    <div class="NAV">
+        <nav class="navbar navbar-expand-lg sticky-top ">
+            <div class="container">
+                <h1 class="navbar-brand">Jewelry</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" 
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link p-lg-3 " href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link p-lg-3 " href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="Login">
+                    <a class="btn main-btn" href="singup.html">Signup/Login</a>
+                </div>
+                <div class="form-check form-switch ps-5">
+                    <input class="form-check-input" type="checkbox" id="change-mood" onclick="changemood()">
+                    <label class="label" for="change-mood" id="theme">Dark</label>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
-    </nav>
-    <div class="landing mb-5">
-        <div class="container">
-            <div class="text-center">
-                <h1>Jewelry</h1>
-                <P class="fw-semibold mb-3">Shine with the finest pieces of 
-                    jewelry designed to complement your beauty and express your elegance</P>
-                <a class="btn btn-primary main-btn" href="#">SHOP NOW</a>
-            </div>
-        </div>
+        </nav>
     </div>
-    <div class="feature text-center pt-5 pb-5 mt-5">
-        <div class="container">
-            <div class="main-titl mb-5 position-relative text-uppercase">
-                <h2>services</h2>
+    <section id="Home">
+        <div class="landing mb-5">
+            <div class="container">
+                <div class="text-center text">
+                    <h1>Jewelry</h1>
+                    <P class="fw-semibold mb-3">Shine with the finest pieces of 
+                        jewelry designed to complement your beauty and express your elegance</P>
+                    <a class="btn btn-primary main-btn" href="#product">SHOP NOW</a>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="feat">
-                        <div class="icon-holder position-relative">
-                            <img class="fa-3x bottom-0 img-fluid icon" src="image/3pcs Bar & Disc Charm Necklace - Gold.jpg" alt="">
+        </div>
+    </section>
+    <section id="Service">
+        <div class="feature text-center pt-5 pb-5 mt-5">
+            <div class="container">
+                <div class="main-titl mb-5 position-relative text-uppercase">
+                    <h2>services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <img class="fa-3x bottom-0 img-fluid icon" src="image/3pcs Bar & Disc Charm Necklace - Gold.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">Necklace</h4>
+                            <p class="lh-lg text-uppercase">Best Necklace is here</p>
                         </div>
-                        <h4 class="mb-3 mt-3 text-uppercase">Necklace</h4>
-                        <p class="lh-lg text-uppercase">Best Necklace is here</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feat">
-                        <div class="icon-holder position-relative">
-                            <img class="fa-3x bottom-0 img-fluid icon"  src="image/6e4644cc-9424-4441-b280-7467000911f9.jpg" alt="">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <img class="fa-3x bottom-0 img-fluid icon"  src="image/6e4644cc-9424-4441-b280-7467000911f9.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">Earrings</h4>
+                            <p class="lh-lg text-uppercase">Best earrings is here</p>
                         </div>
-                        <h4 class="mb-3 mt-3 text-uppercase">Earrings</h4>
-                        <p class="lh-lg text-uppercase">Best earrings is here</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feat">
-                        <div class="icon-holder position-relative">
-                            <img class="fa-3x bottom-0 img-fluid icon"  src="image/Tasman jewelry design unique bird gold ring with black gemstone.jpg" alt="">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feat">
+                            <div class="icon-holder position-relative">
+                                <img class="fa-3x bottom-0 img-fluid icon"  src="image/Tasman jewelry design unique bird gold ring with black gemstone.jpg" alt="">
+                            </div>
+                            <h4 class="mb-3 mt-3 text-uppercase">Ring</h4>
+                            <p class="lh-lg text-uppercase">Best ring is here</p>
                         </div>
-                        <h4 class="mb-3 mt-3 text-uppercase">Ring</h4>
-                        <p class="lh-lg text-uppercase">Best ring is here</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="our-work  mb-5">
-        <div class="container">
-            <div class="main-titl position-relative text-uppercase text-center mb-5">
-                <h2>Our Products</h2>
-            </div>
-            <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback/Heart_Drop_Earrings-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Earrings</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
+    </section>
+    <section id="product">
+        <div class="our-work  mb-5">
+            <div class="container">
+                <div class="main-titl position-relative text-uppercase text-center mb-5">
+                    <h2>Our Products</h2>
                 </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback/68221e3f-d864-4012-abac-52be6ab79c98-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Necklace</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback//Avec_sa_collection_Cérémonie__Sézane_sort_le_grand_jeu-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Ring</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback/fbbc02d9-dc3e-4154-b446-aa7c9fba05cd-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Necklace</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback/KUNDAN_EARRINGS__Kundan_Jewelry__Pakistani_Earrings__Indian_Jewelry__Earrings__Antique_White_Stone_Kundan_Earrings__Bollywood_Earrings_-_Etsy-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Earrings</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                <img src="image_noback/كوليكشن_كوليه_دهب_صيني_بجودة_عالية_لطلة_وأناقة_-removebg-preview.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Necklace</h5>
-                    <p class="card-text text-center">Price:1200$</p>
-                    <a href="#" class="btn btn-primary">BOOK NOW</a>
-                </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center botn View">
-                <a class="btn main-btn d-inline-block mt-5 pb-3 pt-3 " href="#">View All Products</a>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="about-us mb-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 mb-4 text-center text-md-start">
-                    <div class="text">
-                        <h2 class="text-uppercase">about us</h2>
-                        <P class="fs-6 pb-5 pt-3">
-                            Welcome to the world of luxury jewelry, where dreams turn into exceptional pieces that combine 
-                            elegance and creativity. Discover our high-end collections that have been carefully 
-                            designed to suit all tastes and add a charming touch to every moment of your life.
-                        </P>
-                        <a class="btn main-btn d-inline-block text" href="#">See more</a>
+                <div class="row">
+                    <!-- <div class="col-sm-6 col-md-4 col-lg-3"></div> -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/Heart_Drop_Earrings-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card1" id="card1">
+                            <h5 class="card-title text-center" id="header"></h5>
+                            <p class="card-text text-center" id="paragra-ph"></p>
+                        </div>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number" id="rate">0/5</span>
+                        </div>                                                              
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon" ></i>
+                    </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <img class="img-fluid" src="image/about-img.jpg" alt="">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/68221e3f-d864-4012-abac-52be6ab79c98-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Necklace</h5>
+                        <p class="card-text text-center">Price:300$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <span class="rating-number">0/5</span>
+                        </div>    
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon"  ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback//Avec_sa_collection_Cérémonie__Sézane_sort_le_grand_jeu-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ring</h5>
+                        <p class="card-text text-center">Price:400$</p>
+                        <div class="star-rating">
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                                             
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon"  ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/fbbc02d9-dc3e-4154-b446-aa7c9fba05cd-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Necklace</h5>
+                        <p class="card-text text-center">Price:450$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                                               
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon"  ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/KUNDAN_EARRINGS__Kundan_Jewelry__Pakistani_Earrings__Indian_Jewelry__Earrings__Antique_White_Stone_Kundan_Earrings__Bollywood_Earrings_-_Etsy-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Earrings</h5>
+                        <p class="card-text text-center">Price:500$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                                                 
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon" ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/كوليكشن_كوليه_دهب_صيني_بجودة_عالية_لطلة_وأناقة_-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Necklace</h5>
+                        <p class="card-text text-center">Price:550$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                         
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon"  id></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/p2.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Necklace</h5>
+                        <p class="card-text text-center">Price:600$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                                                  
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon" ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                    <img src="image_noback/My_Top_5_Minimalist_Jewelry_Brands___JuniperOats_Studio-removebg-preview.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Earrings</h5>
+                        <p class="card-text text-center">Price:650$</p>
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                                <i class="fa-solid fa-star rate-product"></i>
+                            <span class="rating-number">0/5</span>
+                        </div>                         
+                        <a href="book.html" class="btn btn-primary bot">BOOK NOW</a>
+                        <i class="fa-solid fa-heart heart-icon" ></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center botn View">
+                    <!-- <a class="btn main-btn d-inline-block mt-5 pb-3 pt-3" href="#">View All Products</a> -->
+                    <a href="#" class="btn main-btn d-inline-block mt-5">View All Products</a>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="offer">
+    </section>
+    <section id="About">
+        <div class="about-us mb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 mb-4 text-center text-md-start">
+                        <div class="text">
+                            <h2 class="text-uppercase">about us</h2>
+                            <P class="fs-6 pb-5 pt-3">
+                                Welcome to the world of luxury jewelry, where dreams turn into exceptional pieces that combine 
+                                elegance and creativity. Discover our high-end collections that have been carefully 
+                                designed to suit all tastes and add a charming touch to every moment of your life.
+                            </P>
+                            <p id="paragraph"></p>
+                            <button class="btn main-btn d-inline-block text" onclick="toggleText()">See more</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <img class="img-fluid" src="image/about-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="offer">
         <div class="contianer-fluid">
             <div class="row">
-                <div class="col-md-7 px-0">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <div class="box1">
                         <img class="img-fluid" src="image/o1.jpg" alt="">
-                        <h2 class="text-md-start ps-3">Upto 15% Off</h2>
+                        <h2 class="text-md-start ps-5">Upto 15% Off</h2>
                         <div class="d-flex justify-content-center mt-5 ">
-                            <a class="btn main-btn d-inline-block" href="#">Shop Now</a>
+                            <a class="btn main-btn d-inline-block ps-5 ms-5" href="#">Shop Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 px-0">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <div class="box2">
                         <img class="img-fluid" src="image/Capture.PNG" alt="">
                         <h2 class="text-center">Upto 10% Off</h2>
                         <div class="d-flex justify-content-center mt-5 ">
-                            <a class="btn main-btn d-inline-block" href="#">Shop Now</a>
+                            <a class="btn main-btn d-inline-block bo" href="#">Shop Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="testimonial">
-        <div class="container text-center">
-            <div class="main-titl mb-5 position-relative text-uppercase">
-                <h2 >Testimonial</h2>
-            </div>
-            <div class="test">
-                <div>
-                    <img class="img-fluid rounded-pill " src="image/Modern, Minimalist Jewelry by Mlkahnhy.jpg" alt="">
-                </div>
-                <h2 class="pt-3 ">Mona Ashraf</h2>
-                <P>My experience with this site was exceptional! The jewelry designs are
-                    eye-catching, and the quality of the pieces exceeds expectations. The customer service is great,
-                    and the delivery is fast and reliable.
-                    I recommend it to anyone looking for luxury and distinction</P>
-            </div>
-            <div class="arrow mt-3">
-                <a href="#"><i class="fa-solid fa-arrow-left p-3 left"></i></a>
-                <a href="#"><i class="fa fa-long-arrow-right p-3 right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="footer pt-5 pb-5 text-center text-md-start">
-        <div class="container">
+        <div></div>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="info">
-                        <h2 class="mb-4">Jewelry</h2>
-                        <p class="mb-5">Thank you for visiting our website.</p>
+                <div class="col-lg-6 col-md-12 box1">
+                    <img class="img-fluid" src="image/o1.jpg" alt="">
+                    <h2 class="text-md-start ps-5">Upto 15% Off</h2>
+                    <div class="d-flex justify-content-center mt-5">
+                        <a class="btn main-btn d-inline-block ps-5 ms-5" href="#">Shop Now</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="link">
-                        <h5>Links</h5>
-                        <div class="list-nustyled lh-lg">
-                            <li>HOME</li>
-                            <li>ABOUT US</li>
-                            <li>SERVICES</li>
-                            <li>TESTIMONIAL</li>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2">
-                    <div class="link">
-                        <h5>About Us</h5>
-                        <div class="list-nustyled lh-lg">
-                            <li>SIGN IN</li>
-                            <li>EMAIL</li>
-                            <li>OUR TEAM</li>
-                            <li>CONTACT US</li>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="contact">
-                        <h5>Contact Us</h5>
-                        <a class="btn main-btn d-inline-block text ps-5 pe-5 text-center mt-3" href="https://mail.google.com/">EMAIL</a>
+                <div class="col-lg-6 col-md-12 box2">
+                    <img class="img-fluid" src="image/Capture.PNG" alt="">
+                    <h2 class="text-center">Upto 10% Off</h2>
+                    <div class="d-flex justify-content-center mt-5">
+                        <a class="btn main-btn d-inline-block" href="#">Shop Now</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="new ">
+        <div class="container-fluid">
+            <h1>New Collection</h1>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/Stephanie Omorojor Fronts 'New Tribe' Captured By Francesco Scotti For Vogue Arabia April 2018 — Anne of Carversville.jpg" alt="">
+                    <h3>New</h3>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/SAUDI JEWELRY BY NOURA 🇸🇦✨ on Instagram….jpg" alt="">
+                    <h3>New</h3>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/Miss Paty.jpg" alt="">
+                    <h3>New</h3>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/Vanda Jacintho Jewelry.jpg" alt="">
+                    <h3>New</h3>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/Τα trends στα γυναικεία αξεσουάρ για το 2021 _ ediva_gr.jpg" alt="">
+                    <h3>New</h3>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid img" src="image/La Mer Shell Choker - GOLD.jpg" alt="">
+                    <h3>New</h3>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="beastSaler">
+        <div class="container-fluid">
+            <h1>Best Saler</h1>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/b9d8465a-8e58-4e16-86be-c41058e2e7c2.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="p-rate">5/5</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/La it bague du moment !.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="p-rate">5/5</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/Yeni Sezona Damgasını Vurmaya Hazırlanan En _Büyük_ Trend_ XXL Küpeler.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="p-rate">4.5/5</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/bc6ff246-78cb-44ee-acee-877b68a1a1ef.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="p-rate">4/5</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/Why Editor's & Celebrities, Alike, Can't Stop Wearing This Cult Jewelry Brand.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="p-rate">3.5/5</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-fluid image" src="image/The Thick Chain Necklace Is Quickly Replacing Your Usually Dainty Jewelry.jpg" alt="">
+                    <h3>Best Saler</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="p-rate">3/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section id="Testimonial">
+        <div class="testimonial">
+            <div class="container text-center">
+                <div class="main-titl mb-5 position-relative text-uppercase">
+                    <h2 >Testimonial</h2>
+                </div>
+                <div class="test">
+                    <div>
+                        <img class="img-fluid rounded-pill " src="image/Modern, Minimalist Jewelry by Mlkahnhy.jpg" alt="">
+                    </div>
+                    <h2 class="pt-3 ">Mona Ashraf</h2>
+                    <P>My experience with this site was exceptional! The jewelry designs are
+                        eye-catching, and the quality of the pieces exceeds expectations. The customer service is great,
+                        and the delivery is fast and reliable.
+                        I recommend it to anyone looking for luxury and distinction</P>
+                </div>
+                <div class="arrow mt-3">
+                    <a href="#"><i class="fa-solid fa-arrow-left p-3 left"></i></a>
+                    <a href="#"><i class="fa fa-long-arrow-right p-3 right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="Testimonial">
+        <div class="testimonial">
+            <div class="container text-center">
+                <div class="main-titl mb-5 position-relative text-uppercase">
+                    <h2 >Testimonial</h2>
+                </div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active btto" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2 " class="btto"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3 " class="btto"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="test">
+                        <div>
+                            <img class="img-fluid rounded-pill " src="image/Modern, Minimalist Jewelry by Mlkahnhy.jpg" alt="">
+                        </div>
+                        <h2 class="pt-3 ">Mona Ashraf</h2>
+                        <P>My experience with this site was exceptional! The jewelry designs are
+                            eye-catching, and the quality of the pieces exceeds expectations. The customer service is great,
+                            and the delivery is fast and reliable.
+                            I recommend it to anyone looking for luxury and distinction</P>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="test">
+                        <div>
+                            <img class="img-fluid rounded-pill " src="image/Modern, Minimalist Jewelry by Mlkahnhy.jpg" alt="">
+                        </div>
+                        <h2 class="pt-3 ">Mona Ashraf</h2>
+                        <P>My experience with this site was exceptional! The jewelry designs are
+                            eye-catching, and the quality of the pieces exceeds expectations. The customer service is great,
+                            and the delivery is fast and reliable.
+                            I recommend it to anyone looking for luxury and distinction</P>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="test">
+                        <div>
+                            <img class="img-fluid rounded-pill " src="image/Modern, Minimalist Jewelry by Mlkahnhy.jpg" alt="">
+                        </div>
+                        <h2 class="pt-3 ">Mona Ashraf</h2>
+                        <P>My experience with this site was exceptional! The jewelry designs are
+                            eye-catching, and the quality of the pieces exceeds expectations. The customer service is great,
+                            and the delivery is fast and reliable.
+                            I recommend it to anyone looking for luxury and distinction</P>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon arrow1" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon arrow2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="footer pt-5 pb-5 text-center text-md-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="info">
+                            <h2 class="mb-4">Jewelry</h2>
+                            <p class="mb-5">Thank you for visiting our website.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="link">
+                            <h5>Links</h5>
+                            <div class="list-nustyled lh-lg">
+                                <li><a href="#Home" class="lin">HOME</a></li>
+                                <li><a href="#About" class="lin">ABOUT US</a></li>
+                                <li><a href="#Service" class="lin">SERVICES</a></li>
+                                <li><a href="#Testimonial" class="lin">TESTIMONIAL</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="link">
+                            <h5>About Us</h5>
+                            <div class="list-nustyled lh-lg">
+                                <a href="singup.html" class="lin"><li>SIGN IN</li></a>
+                                <a href="https://mail.google.com/" class="lin"><li>EMAIL</li></a>
+                                <!-- <li>OUR TEAM</li>
+                                <li>CONTACT US</li> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="contact">
+                            <h5>Contact Us</h5>
+                            <a class="btn main-btn d-inline-block text ps-5 pe-5 text-center mt-3" href="https://mail.google.com/">EMAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="copyright text-center">
         Created By <span>Mona_Ashraf </span>&copy; 2024
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>

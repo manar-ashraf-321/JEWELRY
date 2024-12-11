@@ -4,22 +4,15 @@
     --blur-color:rgb(252, 103, 17,0.25);
 }
 body{
-    /* height: 10000px; */
-    background-color: rgb(222, 222, 222);
-    /* background-color: #eeeded; */
+    /* background-color: rgb(222, 222, 222); */
+    /* background-color: aliceblue; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .navbar{
-    background-color: var(--main-color);
+    height: 0;
+    margin-top: 25px;
+    /* background-color: var(--main-color); */
 }
-.navbar-brand{
-    color:var(--yelow-color);
-font-family:'Ga Maamli';
-font-size: 30px;
-}
-/* .navbar-brand:hover{
-    
-} */
 .navbar .navbar-nav .nav-link{
     color:var(--yelow-color);
 }
@@ -42,20 +35,45 @@ box-shadow: none;
     color: var(--yelow-color);
     border-color: var(--yelow-color);
 }
-/* -------------------------- */
+.navbar-brand{
+    color:var(--yelow-color);
+    font-family:'Ga Maamli';
+    font-size: 30px;
+}
+.navbar-brand:hover{
+    color: var(--yelow-color);
+}
+.label{
+    color: var(--yelow-color);
+}
+.form-check-input{
+background-color: var(--main-color);
+}
+.form-check-input:checked{
+background-color: var(--yelow-color);
+}
+/* --------------------------------------------------------------------*/
 .landing{
+    margin-top: -80px;
     background-color: var(--main-color);
-    min-height: calc(75vh);
+    background-image:url('../image/1.png');
+    background-size: cover;
+    min-height: calc(100vh);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--yelow-color);
+    z-index: 1;
 }
 .landing h1{
-    font-family: 'Edu Australia VIC WA NT Hand Precursive'
+    font-family: 'Edu Australia VIC WA NT Hand Precursive';
+    font-size: 115px;
+}
+.landing p{
+    font-size: 25px;
 }
 .landing .btn{
-    
+    color: var(--main-color);
     background-color: #fc6711;
     border-radius: 5px;
     border-color: #fc6711;
@@ -74,7 +92,7 @@ box-shadow: none;
 .main-titl h2{
     font-size:5rem ;
     color:var(--blur-color);
-    margin-top: -85px;
+    margin-top: -55px;
 }
 .feature .icon-holder svg{
 left: 50%;
@@ -102,44 +120,119 @@ color: var(--yelow-color);
 margin:90px 0px ;
 }
 .our-work .card{
-    background-color: var(--main-color);
-width: 300px;
-padding: 60px 0px;
-overflow: hidden;
-border-radius: 10px;
-margin-bottom: 10px;
-color: var(--yelow-color);
-margin-left: 50px;
+    background-color: rgb(222, 222, 222);
+    /* background-color: var(--main-color); */
+    /* background-color:aliceblue; */
+    /* width: 230px; */
+    width: 250px;
+    height: 250px;
+    padding: 60px 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: var(--yelow-color);
+    border-radius: 5px;
+    /* margin-right: 50px; */
+    /* margin-left: 50px; */
+}
+@media (max-width:1199px) and (min-width:750px){
+    .our-work .card{
+        width: 230px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:576px) and (min-width:480px){
+    .our-work .card{
+margin-left:130px;
+}
+}
+@media (max-width:479px) and (min-width:400px){
+    .our-work .card{
+        margin-left:100px;
+}
+}
+@media (max-width:400px){
+    .our-work .card{
+        margin-left:30px;
+}
+}
+@media (max-width:410px){
+    .our-work .card{
+        margin-left:0px;
+}
 }
 .our-work .card:hover{
-margin: -10px;
+    margin-top: -5px;
+    box-shadow: 15px 10px 10px rgb(225, 225, 225,5);
+}
+.our-work h5{
+    margin-top: -110px;
+    margin-left: 110px;
+}
+.our-work p{
+    /* margin-top: -50px; */
+    margin-left: 110px;
 }
 .our-work .card img{
-    margin-top: -50px;
-width: 300px;
-height: 200px;
+    /* margin: -80px 50px 0 90px; */
+    margin-top: -60px;
+    width: 130px;
+    height: 140px;
 }
-.our-work .btn{
+.our-work .bot{
     color: var(--main-color);
     margin-top: 5px;
-    padding: 2px 80px;
+    padding: -20px 80px;
     background-color: var(--yelow-color);
     border-radius: 5px;
     border: 1px solid var(--yelow-color);
     -webkit-transition: all .2s;
     transition: all .2s;
-    margin-bottom:-60px;
-    margin-left: 10px;
+    margin-bottom:18px;
+    margin-right: 20px;
 }
-.our-work .btn:hover{
+.our-work .bot:hover{
     background-color: var(--main-color);
     color: var(--yelow-color);
 }
 .View{
-    margin-bottom: 90px !important;
+    margin-bottom:60px ;
+}
+.View .btn{
+    color: var(--main-color);
+    border-radius: 5px;
+    border: 1px solid var(--yelow-color);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background-color: var(--yelow-color);
+    padding: 20px 40px;
 }
 .View .btn:hover{
     background-color:rgb(222, 222, 222);
+}
+.heart-icon{
+    color: gray;
+    transition: color 0.3s ease;
+    /* margin-bottom: -100px; */
+    margin-left: 50px;
+    margin-top: 27px;
+    /* font-size: 100px; */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.star-rating {
+    display: flex;
+    /* direction: ltr; */
+    align-items: center;
+    margin-top: 50px;
+}
+.star-rating i{
+    color: gray;
+    cursor: pointer;
+    /* flex-direction: row-reverse; */
+}
+.star-rating .rating-number{
+    margin-left: 15px;
 }
 /* --------------------------------------------------------------- */
 .about-us{
@@ -174,50 +267,58 @@ height: 200px;
 .about-us img:hover{
     transform: rotate(5deg);
 }
-/* --------------------------------------------------------------------------- */
-.offer{
-    margin-top: 100px;
-    margin-bottom: 700px;
-}
-.offer .box1 h2{
-    margin-top: -550px;
-    color: #fc6711;
-}
-.offer .box1 .btn{
-color: var(--main-color);
-background-color: var(--yelow-color);
-margin-right: 750px;
-margin-top: -20px;
-padding-left: 20px;
-padding-right: 20px;
-}
-.offer .box1 .btn:hover{
-    color: var(--yelow-color);
-    background-color: transparent;
-    border-color:var(--yelow-color);
-}
-.box2 img{
-    height: 557px;
-    width: 650px;
-}
-.offer .box2 h2{
-    margin-top: -500px;
-    color: #fc6711;
-}
-.offer .box2 .btn{
-    color: var(--main-color);
-    background-color: var(--yelow-color);
-    margin-top: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    .offer .box2 .btn:hover{
-        color: var(--yelow-color);
-        background-color: transparent;
-        border-color:var(--yelow-color);
-}
 /* ------------------------------------------------------------------------------------ */
+.new{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.new h1{
+    padding-left: 10px;
+    margin: 10px;
+    color: var(--yelow-color);
+    font-family: 'Edu Australia VIC WA NT Hand Precursive';
+}
+.new .img{
+    padding-top: 10px;
+    height: 100%;
+    border-radius:3px ;
+    width: 100%;
+}
+.new h3{
+    margin-top:-40px;
+    color: var(--yelow-color);
+}
+/*----------------------------------------------------------------------------------*/
+.beastSaler{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.beastSaler h1{
+    padding-left: 10px;
+    margin: 10px;
+    color: var(--yelow-color);
+    font-family: 'Edu Australia VIC WA NT Hand Precursive';
+}
+.beastSaler .image{
+    height: 100%;
+    border-radius:3px ;
+    padding-top: 10px;
+}
+.beastSaler h3{
+    margin-top:-70px;
+    color: var(--yelow-color);
+}
+.rate{
+    color: var(--yelow-color);
+}
+.p-rate{
+    color: var(--yelow-color);
+    margin-left: 180px;
+    margin-top: -23px;
+}
+/*---------------------------------------------------------------------------------*/
 .testimonial{
+    margin-top: 150px;
     margin-bottom: 150px;
 }
 .testimonial img{
@@ -265,6 +366,9 @@ color: var(--yelow-color);
 background-color:var(--main-color);
 color: var(--yelow-color);
 }
+.lin{
+    text-decoration: none;
+}
 /* ------------------------------------------------------------------------------------- */
 .copyright{
     color:var(--main-color);
@@ -272,3 +376,28 @@ color: var(--yelow-color);
 .copyright span{
     color: var(--yelow-color);
 }
+/*---------------------------------------------------------------------------------------------*/
+.BO{
+color: #fc6711;
+}
+/*---------------------------------------------------*/
+.testimonial{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.img-test{
+    width: 100px;
+    padding-top: 5px;
+    border-color:var(--yelow-color) ;
+}
+/*------------*/
+.btto{
+    margin-top: 30px;
+    margin-bottom:-60px;
+}
+/* .arrow1{
+    margin-right: 150px;
+}
+.arrow2{
+    margin-left: 150px;
+} */
