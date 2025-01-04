@@ -289,22 +289,22 @@ margin-left:130px;
     color: var(--yelow-color);
 }
 /*----------------------------------------------------------------------------------*/
-.beastSaler{
+.BestSeller{
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.beastSaler h1{
+.BestSeller h1{
     padding-left: 10px;
     margin: 10px;
     color: var(--yelow-color);
     font-family: 'Edu Australia VIC WA NT Hand Precursive';
 }
-.beastSaler .image{
+.BestSeller .image{
     height: 100%;
     border-radius:3px ;
     padding-top: 10px;
 }
-.beastSaler h3{
+.BestSeller h3{
     margin-top:-70px;
     color: var(--yelow-color);
 }

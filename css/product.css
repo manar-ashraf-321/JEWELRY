@@ -1,0 +1,129 @@
+:root{
+    --main-color:#422d21;
+    --yelow-color:#fc6711;
+    --blur-color:rgb(252, 103, 17,0.25);
+}
+.our-work{
+margin:90px 0px ;
+}
+.our-work .header{
+color: var(--yelow-color);
+}
+.our-work .card{
+    background-color: rgb(222, 222, 222);
+    /* background-color: var(--main-color); */
+    /* background-color:aliceblue; */
+    /* width: 230px; */
+    width: 250px;
+    height: 250px;
+    padding: 60px 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: var(--yelow-color);
+    border-radius: 5px;
+    /* margin-right: 50px; */
+    /* margin-left: 50px; */
+}
+@media (max-width:1199px) and (min-width:750px){
+    .our-work .card{
+        width: 230px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:576px) and (min-width:480px){
+    .our-work .card{
+margin-left:130px;
+}
+}
+@media (max-width:479px) and (min-width:400px){
+    .our-work .card{
+        margin-left:100px;
+}
+}
+@media (max-width:400px){
+    .our-work .card{
+        margin-left:30px;
+}
+}
+@media (max-width:410px){
+    .our-work .card{
+        margin-left:0px;
+}
+}
+.our-work .card:hover{
+    margin-top: -5px;
+    box-shadow: 15px 10px 10px rgb(225, 225, 225,5);
+}
+.our-work h5{
+    margin-top: -110px;
+    margin-left: 110px;
+}
+.our-work p{
+    /* margin-top: -50px; */
+    margin-left: 110px;
+}
+.our-work .card img{
+    /* margin: -80px 50px 0 90px; */
+    margin-top: -60px;
+    width: 130px;
+    height: 140px;
+}
+.our-work .bot{
+    color: var(--main-color);
+    margin-top: 5px;
+    padding: -20px 80px;
+    background-color: var(--yelow-color);
+    border-radius: 5px;
+    border: 1px solid var(--yelow-color);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    margin-bottom:18px;
+    margin-right: 20px;
+}
+.our-work .bot:hover{
+    background-color: var(--main-color);
+    color: var(--yelow-color);
+}
+.View{
+    margin-bottom:60px ;
+}
+.View .btn{
+    color: var(--main-color);
+    border-radius: 5px;
+    border: 1px solid var(--yelow-color);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background-color: var(--yelow-color);
+    padding: 20px 40px;
+}
+.View .btn:hover{
+    background-color:rgb(222, 222, 222);
+}
+.heart-icon{
+    color: gray;
+    transition: color 0.3s ease;
+    /* margin-bottom: -100px; */
+    margin-left: 50px;
+    margin-top: 27px;
+    /* font-size: 100px; */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.star-rating {
+    display: flex;
+    /* direction: ltr; */
+    align-items: center;
+    margin-top: 50px;
+}
+.star-rating i{
+    color: gray;
+    cursor: pointer;
+    /* flex-direction: row-reverse; */
+}
+.star-rating .rating-number{
+    margin-left: 15px;
+}
+.product2{
+    margin-top: -90px;
+}
