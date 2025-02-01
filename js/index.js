@@ -24,15 +24,18 @@ setInterval(function(){
 },1000);
 /*---------------------------view-paragraph--------------------------------*/
 let p = document.getElementById('paragraph');
-onclick = function () {
+let button=document.getElementById('button')
+function toggleText() {
     if (p.textContent === "") {
         p.textContent = "Discover the splendor of luxurious designs on our jewelry website, where creativity and beauty are embodied in every carefully crafted piece to suit your refined taste.";
         p.style.marginTop = '-50px';
         p.style.marginBottom = '50px';
+        button.textContent="Less view"
     } else {
         p.textContent = "";
         p.style.marginTop = '0';
         p.style.marginBottom = '0';
+        button.textContent="See more"
     }
 };
 /*---------------------------color-heart--------------------------------------*/
