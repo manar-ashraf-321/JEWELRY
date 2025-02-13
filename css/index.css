@@ -390,6 +390,8 @@ margin-left:130px;
     color: var(--yelow-color);
     margin-left: 180px;
     margin-top: -23px;
+    position: absolute;
+
 }
 /*---------------------------------------------------------------------------------*/
 .testimonial{
