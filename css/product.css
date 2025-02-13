@@ -68,7 +68,7 @@ color: var(--yelow-color);
     /* background-color: var(--main-color); */
     /* background-color:aliceblue; */
     /* width: 230px; */
-    width: 250px;
+    /* width: 250px; */
     height: 250px;
     padding: 60px 0px;
     overflow: hidden;
@@ -79,7 +79,7 @@ color: var(--yelow-color);
     /* margin-right: 50px; */
     /* margin-left: 50px; */
 }
-@media (max-width:1199px) and (min-width:750px){
+/* @media (max-width:1199px) and (min-width:750px){
     .our-work .card{
         width: 230px;
         margin-right: 20px;
@@ -104,7 +104,7 @@ margin-left:130px;
     .our-work .card{
         margin-left:0px;
 }
-}
+} */
 .our-work .card:hover{
     margin-top: -5px;
     box-shadow: 15px 10px 10px rgb(225, 225, 225,5);
