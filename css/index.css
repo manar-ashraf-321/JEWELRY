@@ -63,7 +63,7 @@ background-color: var(--main-color);
 background-color: var(--yelow-color);
 }
 /* --------------------------------------------------------------------*/
-.land{
+/* .land{
     margin-top: -42px;
 }
 .carousel-caption{
@@ -84,11 +84,11 @@ color:var(--yelow-color);
     box-shadow: none;
     color: var(--yelow-color);
     border-color: var(--yelow-color);
-}
+} */
 /* ///////////////////////////////////////////////////// */
 .landing{
     min-height: calc(100vh);
-    max-width: 100%;
+    /* max-width: 100%; */
     margin-top: -80px;
     background-color: var(--main-color);
     background-image:url('../image/1.png');
@@ -128,49 +128,11 @@ color:var(--yelow-color);
     color: var(--yelow-color);
     border-color: var(--yelow-color);
 }
-/* .landing{
-    margin-top: -80px;
-    background-color: var(--main-color);
-    background-image:url('../image/1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: contain;
-    background-attachment: fixed;
-    min-height: calc(100vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--yelow-color);
-    z-index: 1;
+@media (max-width:720px){
+    .landing{
+        min-height: calc(70vh);
+    }
 }
-.landing .text{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% ,-50%);
-    text-align: center;
-    max-width: 100%;
-}
-.landing h1{
-    font-family: 'Edu Australia VIC WA NT Hand Precursive';
-    font-size: 100px;
-}
-.landing p{
-    font-size: 25px;
-}
-.landing .btn{
-    color: var(--main-color);
-    background-color: #fc6711;
-    border-radius: 5px;
-    border-color: #fc6711;
-}
-.landing .btn:hover{
-    background-color:var(--main-color);
-    box-shadow: none;
-    color: var(--yelow-color);
-    border-color: var(--yelow-color);
-} */
 /* --------------------------------------------------------------------------------------- */
 .feature img{
     width: 300px;

@@ -16,12 +16,12 @@ function changemood()
     }
 };
 /*-----------------------------change-background-------------------------------*/
-// let landing=document.querySelector('.landing');
-// let img=['1.png','3.png','2.png'];
-// setInterval(function(){
-//     let randomNumber=Math.floor(Math.random() *img.length);
-//     landing.style.backgroundImage='url("image/' + img[randomNumber] +'")';
-// },1000);
+let landing=document.querySelector('.landing');
+let img=['1.png','3.png','2.png'];
+setInterval(function(){
+    let randomNumber=Math.floor(Math.random() *img.length);
+    landing.style.backgroundImage='url("image/' + img[randomNumber] +'")';
+},1000);
 /*---------------------------view-paragraph--------------------------------*/
 let p = document.getElementById('paragraph');
 let button=document.getElementById('button')
