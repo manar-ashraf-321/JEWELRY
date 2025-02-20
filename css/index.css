@@ -39,10 +39,10 @@ box-shadow: none;
     border-radius: 5px;
 }
 .navbar .Login .btn:hover{
-    background-color:var(--main-color);
     box-shadow: none;
     color: var(--yelow-color);
     border-color: var(--yelow-color);
+    background-color:var(--main-color);
 }
 .navbar-brand{
     color:var(--yelow-color);
