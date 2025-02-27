@@ -22,6 +22,6 @@ function book(){
         // //     window.location.href = "../index.html";
         // // },1000);
         // return true;
-        alert("Booking done ^--^")
+        window.alert("Booking done ^--^");
     };
 }

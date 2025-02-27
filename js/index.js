@@ -22,6 +22,18 @@ setInterval(function(){
     let randomNumber=Math.floor(Math.random() *img.length);
     landing.style.backgroundImage='url("image/' + img[randomNumber] +'")';
 },1000);
+/*---------------------------------card--------------------------------*/
+const card= {
+    title: "Earrings",
+    text: "Price: 200$",
+    Content: function () {
+        let header = document.getElementById("header");
+        let Price  = document.getElementById("paragra-ph");
+        header.textContent = card.title;
+        Price.textContent = card.text;
+    }
+};
+card.Content();
 /*---------------------------view-paragraph--------------------------------*/
 let p = document.getElementById('paragraph');
 let button=document.getElementById('button')
@@ -50,18 +62,6 @@ for (let i = 0; i < icons.length; i++) {
         }
     };
 }
-/*---------------------------------card--------------------------------*/
-const card= {
-    title: "Earrings",
-    text: "Price: 200$",
-    Content: function () {
-        let header = document.getElementById("header");
-        let Price  = document.getElementById("paragra-ph");
-        header.textContent = card.title;
-        Price.textContent = card.text;
-    }
-};
-card.Content();
 /*--------------------------------star-rate--------------------------------*/
 const starRatings = document.getElementsByClassName('star-rating');
 for (let i = 0; i < starRatings.length; i++) {
